@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DV Express - Gagne ta Green Card</title>
 
-  <!-- META TAGS POUR WHATSAPP / FACEBOOK / TWITTER -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Gagne ta Green Card 2025 - DV Express" />
   <meta property="og:description" content="Remplissage automatique, photo validée, + de chances d’être accepté. 100% conforme et rapide." />
@@ -23,18 +22,18 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       background: white;
       border-radius: 12px;
-      padding: 2rem;
+      padding: 1.5rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       color: #0070f3;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     img.main-image {
@@ -53,7 +52,7 @@
     }
 
     ul {
-      padding-left: 1.5rem;
+      padding-left: 1.2rem;
       margin-bottom: 2rem;
     }
 
@@ -68,37 +67,34 @@
       border-radius: 10px;
       font-size: 1.2rem;
       transition: background 0.3s ease;
+      width: fit-content;
     }
 
     .cta-button:hover {
       background: #005bb5;
     }
 
-    .logos {
+    .logos, .flag-list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 1.5rem;
-      margin: 2rem 0;
+      gap: 1rem;
+      margin: 1.5rem 0;
     }
 
-    .logos img {
-      height: 60px;
+    .logos img, .flag-list img {
+      height: 45px;
+      max-width: 70px;
       object-fit: contain;
+      border-radius: 4px;
     }
 
-    .flags-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .flags-row img {
-      height: 24px;
-      width: auto;
+    .country-info {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 2rem;
+      line-height: 1.6;
     }
 
     blockquote {
@@ -117,26 +113,24 @@
       text-align: center;
     }
 
-    .timeline h3,
-    .testimonials h3 {
+    .timeline h3, .testimonials h3 {
       margin-top: 2rem;
       color: #0070f3;
-    }
-
-    .country-info {
       text-align: center;
-      font-weight: bold;
-      margin-top: 2rem;
-      line-height: 1.6;
     }
 
     @media (max-width: 600px) {
-      .logos img {
-        height: 45px;
+      h1 {
+        font-size: 1.5rem;
       }
 
       .cta-button {
         width: 100%;
+      }
+
+      .logos img, .flag-list img {
+        height: 40px;
+        max-width: 60px;
       }
 
       .container {
@@ -151,23 +145,25 @@
 
     <img src="dv-lottery.jpg" alt="DV Lottery USA 2025" class="main-image" />
 
+    <!-- Logos officiels -->
     <div class="logos">
-      <img src="state-department.png" alt="US State Department" />
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada" />
+      <img src="state-department.png" alt="US Department of State" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" />
+      <img src="canada-flag.png" alt="Canada Flag" />
     </div>
 
+    <!-- Drapeaux -->
     <p class="country-info">
-      🌍 DV Express vous accompagne dans vos demandes de visa pour plus de <strong>120 pays</strong> :
+      🌍 DV Express vous accompagne dans vos demandes de visa pour plus de <strong>120 pays</strong>
     </p>
 
-    <div class="flags-row">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Turquie">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg" alt="Dubaï">
-      <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France">
-      <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Brésil">
+    <div class="flag-list">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Turquie" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg" alt="Émirats" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="France" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" alt="Brésil" />
     </div>
 
     <p class="highlight">
@@ -213,7 +209,7 @@
   </div>
 
   <script>
-    console.log("✅ Page DV Express chargée.");
+    console.log("✅ Interface responsive chargée !");
   </script>
 </body>
 </html>
