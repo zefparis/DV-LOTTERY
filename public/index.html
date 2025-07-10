@@ -79,11 +79,13 @@
       justify-content: space-around;
       align-items: center;
       margin: 2rem 0;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .logos img {
       height: 50px;
-      opacity: 0.8;
+      object-fit: contain;
     }
 
     blockquote {
@@ -113,34 +115,37 @@
 
     <img src="dv-lottery.jpg" alt="DV Lottery USA 2025" class="main-image" />
 
+    <!-- ✅ Logos officiels -->
     <div class="logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Seal_of_the_United_States_Department_of_State.svg/200px-Seal_of_the_United_States_Department_of_State.svg.png" alt="State Department" />
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt="US Flag" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/IRCC_logo.svg/512px-IRCC_logo.svg.png" alt="Immigration Canada" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/US_Department_of_State_official_seal.svg/200px-US_Department_of_State_official_seal.svg.png" alt="US State Department" />
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada Flag" />
     </div>
 
     <p class="highlight">
-      🚨 Les agences font souvent des erreurs. Ne rate pas ta chance à cause d’un formulaire mal rempli ou d'une photo non conforme !
+      🚨 Ne laisse pas une agence ruiner ta chance à cause d’un formulaire mal rempli ou d'une photo rejetée.
     </p>
 
     <ul>
-      <li>✅ Assistant intelligent : dossier rempli sans erreur</li>
-      <li>✅ Vérification automatique de ta photo (600x600, conforme USA)</li>
-      <li>✅ Sauvegarde de ton dossier au format PDF</li>
-      <li>✅ Paiement sécurisé par Stripe ou Mobile Money</li>
-      <li>✅ Support WhatsApp 7j/7</li>
+      <li>✅ Assistant intelligent : remplissage guidé, sans erreur</li>
+      <li>✅ Photo vérifiée automatiquement (600x600 pixels)</li>
+      <li>✅ Téléchargement de ton dossier prêt à soumettre (PDF)</li>
+      <li>✅ Paiement sécurisé : Stripe ou Mobile Money</li>
+      <li>✅ Support WhatsApp 7j/7 en cas de blocage</li>
     </ul>
 
+    <!-- ✅ Étapes -->
     <div class="timeline">
       <h3>📅 Étapes de ta demande DV Express</h3>
       <ul>
         <li>📸 1. Envoie ta photo – validée automatiquement</li>
-        <li>📝 2. Remplis ton formulaire guidé</li>
-        <li>💳 3. Payer en ligne</li>
-        <li>📤 4. Reçois ton dossier prêt à soumettre</li>
+        <li>📝 2. Remplis ton formulaire avec notre assistant</li>
+        <li>💳 3. Paye en ligne, instantanément</li>
+        <li>📤 4. Reçois ton dossier finalisé</li>
       </ul>
     </div>
 
+    <!-- ✅ Témoignages -->
     <div class="testimonials">
       <h3>📣 Témoignages</h3>
       <blockquote>“Avec DV Express, j’ai été guidé du début à la fin. Photo validée, formulaire nickel. Je suis maintenant à Toronto !”<br/><strong>– Mamadou S., Sénégal 🇸🇳</strong></blockquote>
@@ -151,18 +156,19 @@
       📤 Commencer ma demande maintenant
     </a>
 
+    <!-- ✅ Footer avec disclaimer -->
     <footer>
-      <p>✅ DV Express est conforme aux exigences du Department of State (USA)</p>
-      <p>🔐 Connexion sécurisée - HTTPS + Stripe Certified Partner</p>
+      <p>✅ Conforme aux exigences du programme officiel du Département d’État des États-Unis</p>
+      <p>🔐 Connexion sécurisée – Partenaire Stripe / Paiement mobile</p>
       <p style="margin-top: 1rem; font-size: 0.75rem;">
-        ⚠️ DV Express est un service privé d’assistance. Nous ne sommes pas affiliés au gouvernement des États-Unis ni à USCIS.
+        ⚠️ DV Express est une plateforme d’assistance indépendante. Nous ne sommes pas affiliés au gouvernement des États-Unis ni à USCIS.
       </p>
       <p>© 2025 DV Express – Made by IA-Solution</p>
     </footer>
   </div>
 
   <script>
-    console.log("Page DV Express chargée avec crédibilité.");
+    console.log("DV Express ready – crédibilité activée.");
   </script>
 </body>
 </html>
