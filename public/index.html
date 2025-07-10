@@ -17,55 +17,55 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f8fb;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #222;
     }
 
     .container {
       max-width: 800px;
       margin: auto;
       background: white;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 2rem;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       color: #0070f3;
       text-align: center;
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
 
     img.main-image {
-      max-width: 100%;
-      border-radius: 8px;
-      display: block;
-      margin: 1rem auto;
+      width: 100%;
+      border-radius: 10px;
+      margin: 1.5rem 0;
     }
 
     .highlight {
       font-weight: bold;
       background: #e3f2fd;
       padding: 1rem;
-      border-radius: 6px;
-      margin: 1rem 0;
+      border-radius: 8px;
+      margin: 1.5rem 0;
       text-align: center;
     }
 
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .cta-button {
       display: block;
-      width: fit-content;
+      text-align: center;
       margin: 2rem auto 1rem;
       background: #0070f3;
       color: white;
       text-decoration: none;
       padding: 1rem 2rem;
-      border-radius: 8px;
+      border-radius: 10px;
       font-size: 1.2rem;
       transition: background 0.3s ease;
     }
@@ -76,15 +76,15 @@
 
     .logos {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 2rem 0;
       flex-wrap: wrap;
-      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
     }
 
     .logos img {
-      height: 50px;
+      height: 60px;
       object-fit: contain;
     }
 
@@ -94,6 +94,7 @@
       background: #f0f0f0;
       padding: 1rem;
       border-left: 5px solid #0070f3;
+      border-radius: 4px;
     }
 
     footer {
@@ -103,9 +104,31 @@
       text-align: center;
     }
 
-    .timeline h3, .testimonials h3 {
+    .timeline h3,
+    .testimonials h3 {
       margin-top: 2rem;
       color: #0070f3;
+    }
+
+    .country-info {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .logos img {
+        height: 45px;
+      }
+
+      .cta-button {
+        width: 100%;
+      }
+
+      .container {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -115,12 +138,18 @@
 
     <img src="dv-lottery.jpg" alt="DV Lottery USA 2025" class="main-image" />
 
-    <!-- ✅ Logos officiels -->
+    <!-- Logos Officiels -->
     <div class="logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/US_Department_of_State_official_seal.svg/200px-US_Department_of_State_official_seal.svg.png" alt="US State Department" />
+      <img src="us-dept-state.png" alt="US Department of State" />
       <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="US Flag" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg" alt="Canada Flag" />
+      <img src="canada-flag.png" alt="Canada Flag" />
     </div>
+
+    <!-- Info multi-pays -->
+    <p class="country-info">
+      🌍 DV Express vous accompagne dans vos demandes de visa pour plus de <strong>120 pays</strong>,<br />
+      dont les 🇺🇸 États-Unis, 🇨🇦 Canada, 🇹🇷 Turquie, 🇦🇪 Dubaï, 🇫🇷 France, 🇧🇷 Brésil, et bien d'autres.
+    </p>
 
     <p class="highlight">
       🚨 Ne laisse pas une agence ruiner ta chance à cause d’un formulaire mal rempli ou d'une photo rejetée.
@@ -134,7 +163,6 @@
       <li>✅ Support WhatsApp 7j/7 en cas de blocage</li>
     </ul>
 
-    <!-- ✅ Étapes -->
     <div class="timeline">
       <h3>📅 Étapes de ta demande DV Express</h3>
       <ul>
@@ -145,18 +173,16 @@
       </ul>
     </div>
 
-    <!-- ✅ Témoignages -->
     <div class="testimonials">
       <h3>📣 Témoignages</h3>
-      <blockquote>“Avec DV Express, j’ai été guidé du début à la fin. Photo validée, formulaire nickel. Je suis maintenant à Toronto !”<br/><strong>– Mamadou S., Sénégal 🇸🇳</strong></blockquote>
-      <blockquote>“Je pensais que c’était une arnaque comme les autres, mais non. Tout est bien fait. C’est clair, rapide et sérieux.”<br/><strong>– Grâce T., Côte d’Ivoire 🇨🇮</strong></blockquote>
+      <blockquote>“Avec DV Express, j’ai été guidé du début à la fin. Photo validée, formulaire nickel. Je suis maintenant à Toronto !”<br /><strong>– Mamadou S., Sénégal 🇸🇳</strong></blockquote>
+      <blockquote>“Je pensais que c’était une arnaque comme les autres, mais non. Tout est bien fait. C’est clair, rapide et sérieux.”<br /><strong>– Grâce T., Côte d’Ivoire 🇨🇮</strong></blockquote>
     </div>
 
     <a class="cta-button" href="https://dv-lottery.replit.app" target="_blank">
       📤 Commencer ma demande maintenant
     </a>
 
-    <!-- ✅ Footer avec disclaimer -->
     <footer>
       <p>✅ Conforme aux exigences du programme officiel du Département d’État des États-Unis</p>
       <p>🔐 Connexion sécurisée – Partenaire Stripe / Paiement mobile</p>
@@ -168,7 +194,7 @@
   </div>
 
   <script>
-    console.log("DV Express ready – crédibilité activée.");
+    console.log("✅ Page DV Express prête.");
   </script>
 </body>
 </html>
